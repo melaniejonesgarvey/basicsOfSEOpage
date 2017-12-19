@@ -1,0 +1,271 @@
+/*
+ *	Author: Melanie Garvey
+ *	Date: 7/24/16
+ *	Project Name: Basics of SEO
+ */
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body, #outerwrapper, table {
+	background-color: #cae5fc;
+}
+
+body, header {
+	background-repeat: no-repeat;
+}
+
+body, nav a:link {
+	color: #074f8d;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #ffffff, #cae5fc); /*CSS3 Style*/
+	font-family: Verdana, Arial, sans-serif;
+}
+
+#outerwrapper, footer, table, th, td {
+	border: 1px solid #074f8d;
+}
+
+#outerwrapper, #footernav nav li {
+	margin: 0 auto;
+}
+
+#outerwrapper {
+	width: 90%;
+	box-shadow: 3px 3px 3px #979797; /*CSS3 Style*/
+}
+
+header, main, h2, h3, p, footer {
+	padding: 2%;
+}
+
+header, footer, th, td {
+	text-align: center;
+}
+
+header {
+	background-color: #074f8d;
+	color: #cae5fc;
+	background-image: url(images/pencil.jpg);
+	background-position: right;
+	height: 100%;
+}
+
+
+
+#mainnav nav, dt, .bold, #asterisk, #footernav {
+	font-weight: bold;
+}
+
+#mainnav nav {
+	float: left;
+	width: 15%;
+}
+
+#mainnav nav li, #footernav nav li {
+	list-style-type: none;
+}
+
+#mainnav nav li {
+	margin: 2%;
+	font-size: 1.2em;
+	padding-bottom: 15%;
+}
+
+#mainnav nav a, #footernav nav a {
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #399ef5;
+}
+
+nav a:hover {
+	color: #ffbf00;
+}
+
+main {
+	margin-left: 15%;
+	display: block;
+	background-color: #ffffff;
+}
+
+#seodiagram {
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	float: right;
+	padding: 2px;
+	border: 3px solid #ffbf00;
+	box-shadow: 3px 3px 3px #979797; /*CSS3 Style*/
+}
+
+#strategiessketch {
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	float: right;
+	padding: 2px;
+	border: 3px solid #ffbf00;
+	box-shadow: 3px 3px 3px #979797; /*CSS3 Style*/
+}
+
+#serp {
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	float: right;
+	padding: 2px;
+	margin: 2px;
+	border: 3px solid #ffbf00;
+	box-shadow: 3px 3px 3px #979797; /*CSS3 Style*/
+}
+
+h2, h3, th {
+	background-color: #399ef5;
+	color: #074f8d;
+}
+
+h2, footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+dd, main li {
+	padding-bottom: 2%;
+}
+
+#asterisk, footer, tr:last-child {
+	font-style: italic;
+}
+
+#asterisk {
+	margin-left: 0;
+}
+
+footer, th:hover, td:hover {
+	background-color: #ffffff;
+}
+
+footer {
+	font-size: 1.0em;
+	height: 30%;
+}
+
+#footernav nav li, #desktop {
+	display: inline;
+}
+
+#footernav nav li {
+	padding-right: 5%;
+}
+	
+#mobile {
+	display: none;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+	border-spacing: 0;
+}
+
+th, td {
+	padding: 0.5em;
+}
+
+tr:last-child {
+	background-color: #ffbf00;
+}
+
+@media only screen and (max-width: 64em) {
+	body {
+		margin: 0;
+		background-color: #ffffff;
+	}
+	
+	header {
+		background-image: none;
+	}
+	
+	#outerwrapper, #mainnav nav {
+		width: auto;
+	}	
+	
+	#outerwrapper {
+		min-width: 0;
+		box-shadow: none;
+	}
+	
+	main, #seodiagram, #strategiessketch, #serp, footer {
+		margin-left: 0;
+	}
+	
+	#mainnav nav {
+		float: none;
+		text-align: center;
+		padding: 0.5em;
+	}
+	
+	#mainnav li {
+		display: inline;
+		padding: 0.25em 0.75em;
+	}
+	
+	#seodiagram, #strategiessketch, #serp {
+		max-width: 100%;
+		height: auto;
+		background-size: cover;
+		padding: 2px;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	header, #seodiagram, #strategiessketch, #serp, table {
+		background-image: none;
+	}
+	
+	header {
+		padding-top: 1em;
+	}
+	
+	main {
+		padding: 0.1em 1em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	h3 {
+		font-size: 1.0em;
+	}
+	
+	#mainnav nav {
+		padding: 0;
+	}
+	
+	#mainnav li, #mainnav a {
+		display: block;
+	}
+	
+	#mainnav li {
+		margin: 0;
+		border-bottom: 2px solid #074f8d;
+	}
+	
+	#seodiagram, #strategiessketch, #serp, table, #desktop {
+		display: none;
+	}
+	
+	#seodiagram #strategiessketch #serp, table {
+		height: 0;
+	}
+	
+	#mobile {
+		display: inline;
+	}
+}
+

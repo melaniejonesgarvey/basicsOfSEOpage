@@ -1,0 +1,16 @@
+/*
+ *	Author: Melanie Garvey
+ *	Date: 7/24/16
+ *	Project Name: Basics of SEO
+ */
+
+img, nav, footer {
+	display: none;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "Times New Roman", serif;
+	font-size: 10px;
+}
